@@ -1,5 +1,5 @@
 # Ignore list for Target 3001!, a PCB layout tool
-
+/target/
 # mutex file
 *.T300[01]OPEN
 
