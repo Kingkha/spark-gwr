@@ -8,6 +8,6 @@ Geographically Weighted Regression with Spark
   - run GWRSpark's Main class
 3. To-do thing:
  - Compute bandwitdh in distributed way
- - Compute multi point' beta in distributed way
+ - Compute multi point' beta in distributed way - done!
  - Compute matrix operations in distributed way
 
