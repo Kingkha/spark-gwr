@@ -90,7 +90,7 @@ public class GWR {
 		 * Note: not work in some case T_T
 		 */
 		double gr = (Math.sqrt(5) - 1) / 2;
-		double tol = 0.000001;
+		double tol = 0.0001;
 		double c = b - gr * (b - a);
 		double d = a + gr * (b - a);
 		while(Math.abs(c - d) > tol){
@@ -100,12 +100,12 @@ public class GWR {
 				b = d;
 				d = c;
 				c = b - gr * (b - a);
-				System.out.println(c);
+				System.out.println("CV score = " + fc + " bw = " + c);
 			}else{
 				a = c;
 				c = d;
 				d = a + gr * (b - a);
-				System.out.println(d);
+				System.out.println("CV score = " + fd + " bw = " + d);
 			}
 		}
 		return (b + a)/2 ;

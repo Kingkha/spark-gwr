@@ -39,6 +39,25 @@ public class Coord implements Serializable{
 		return Math.sqrt(dx * dx + dy * dy);
 	}
 	
+	public boolean equals(Object obj){
+		if (obj == null) {
+	        return false;
+	    }
+		
+		final Coord other = (Coord) obj;
+		
+		if(this.x == other.x && this.y == other.y)
+			return true;
+		
+		return false;
+		
+	}
+	
+	public int hashCode(){
+		return 0;
+		
+	}
+	
 	public String toString(){
 		return "(" + x + " , " + y + ")";
 	}
